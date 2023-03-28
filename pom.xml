@@ -22,12 +22,17 @@
   </modules>
 
   <distributionManagement>
-    <site>
-      <id>site-server</id>
-      <name>Test Project Site</name>
-      <url>file:///tmp/maven-project-site</url>
-    </site>
-  </distributionManagement>
+    <repository>
+<id>deployment</id>
+<name>Internal Releases</name>
+<url>http://43.204.38.203:8081/repository/firstnexus-release/</url>
+</repository>
+<snapshotRepository>
+<id>deployment</id>
+<name>Internal Snapshot Releases</name>
+<url>http://43.204.38.203:8081/repository/firstnexus-snap/</url>
+</snapshotRepository>   
+ </distributionManagement>
 
   <build>
     <plugins>
